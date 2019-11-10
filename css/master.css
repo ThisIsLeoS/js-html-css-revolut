@@ -1,0 +1,123 @@
+/* reset rules */
+    h2, p, ul {
+
+        /* to overwrite bootstrap's CSS */
+        margin-bottom: 0;
+    }
+
+    ul {
+
+        /* to overwrite bootstrap's CSS */
+        padding-left: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+/* /reset rules */
+
+/* rules used or usable in different parts of the page */
+    a {
+        transition: color .15s linear;
+        transition: background-color .15s linear;
+    }
+
+    a:hover {
+        color: rgb(25, 28, 31);
+        text-decoration: none;
+    }
+
+    a svg {
+        transition: background-color .15s linear;
+    }
+
+    a svg path {
+        transition: fill .15s linear;
+    }
+
+    .current-page-link-color {
+        color: rgb(25, 28, 31);
+    }
+
+    .clicked-dropdown-toggle-color {
+        color: rgb(25, 28, 31);
+    }
+/* /rules used or usable in different parts of the page */
+
+/* rules used in specific parts of the page */
+    html {
+        font-size: 16px;
+        line-height: 1.15;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .global-container {
+        padding: 0 50px;
+    }
+
+    nav {
+        display: flex;
+        padding-top: 40px;
+        justify-content: space-between;
+    }
+
+    nav > ul {
+        display: flex;
+        color: rgb(139, 149, 158);
+        align-items: center;
+    }
+
+    nav > ul.nav-ul-left > li {
+        padding-right: 25px;
+    }
+
+    nav > ul > li a {
+        color: rgb(139, 149, 158);
+    }
+
+    nav > ul.nav-ul-right > li {
+        position: relative;
+        margin-left: 31px;
+        cursor: pointer;
+        transition: color .15s linear;
+    }
+ 
+    nav > ul.nav-ul-right > li > .my_dropdown-toggle:hover {
+        color: rgb(25, 28, 31);
+    }
+
+    nav > ul.nav-ul-right > li > .my_dropdown-toggle > i {
+        margin-left: 2px;
+    }
+
+    nav > ul.nav-ul-right > li > .my_dropdown-toggle > a.get-app-link {
+        border-radius: 20px;
+        padding: 12px 25px;
+        background-color: rgb(235, 0, 141);
+        color: white;
+    }
+
+    nav > ul.nav-ul-right > li > .my_dropdown-toggle > a.get-app-link:hover {
+        background-color: rgb(210, 0, 126);
+    }
+
+    nav > ul.nav-ul-right > li > .my_dropdown-menu {
+        position: absolute;
+        top: 130%;
+        left: 50%;
+        display: none;
+        transform: translate(-50%, 0);
+        box-shadow: rgba(0, 0, 0, .04) 0 0 4px 0, rgba(0, 0, 0, .08) 0 8px 16px 0;
+    }
+
+    nav > ul.nav-ul-right > li > .my_dropdown-menu > ul > li {
+        padding: 22px 30px 0;
+    }
+
+    nav > ul.nav-ul-right > li > .my_dropdown-menu > ul > li:last-child {
+        padding-bottom: 22px;
+    }
+/* /rules used in specific parts of the page */
