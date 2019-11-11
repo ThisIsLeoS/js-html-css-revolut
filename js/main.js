@@ -1,5 +1,3 @@
-// @ts-check
-
 /* the "current-page-link-color" class is added to every <a> whose "href" attribute has the current
 page's relative file path as value */
 
@@ -40,28 +38,6 @@ $("nav > ul.nav-ul-right > li > .my_dropdown-toggle").click(function() {
     }
     else {
         $(elem).removeClass("fa-chevron-up").addClass("fa-chevron-down");
-    } */
-
-    // using JS vanilla (not working properly, not sure why)
-    /*
-    var nodeList = document.querySelectorAll("nav > ul.nav-ul-right > li");
-    for (var i = 0; i < nodeList.length; ++i) {
-        var iElem = nodeList[i].querySelector("i");
-        // if nodeList[i] has an <i> child
-        if (iElem !== null) {
-            nodeList[i].addEventListener("click", toggleFaChevron(iElem));
-        }
-    }
-
-    function toggleFaChevron(elem) {
-        if (elem.classList.contains("fa-chevron-down")) {
-            elem.classList.remove("fa-chevron-down");
-            elem.classList.add("fa-chevron-up");
-        }
-        else {
-            elem.classList.remove("fa-chevron-up");
-            elem.classList.add("fa-chevron-down");
-        }
     } */
 
     // the dropdown menu appears and disappears
